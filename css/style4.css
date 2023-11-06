@@ -8,6 +8,11 @@
 
 body {
   background: #e3e9f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
 }
 
 header {
@@ -77,110 +82,55 @@ a:hover::before {
   z-index: -1;
 }
 
-.main {
-  margin: 0 auto;
-  width: 50vh;
-  height: 40vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+
+main {
+  margin: 100px auto;
+  width: 80%;
 }
 
-.main h1 {
-  font-size: clamp(3vw, 4em, 4em);
-  font-family: "Arial", sans-serif; 
-  color: #000; 
-}
-
-span {
-  color: #675cff;
-}
-
-.main img {
-  width: 472px;
-  height: 470px;
-}
-
-.button {
-  color: #fff;
-  background-color: #675cff;
-  text-decoration: none;
-  padding: 10px 20px;
-  font-weight: 600;
-  border-radius: 15px;
-  font-family: "Open Sans", sans-serif;
-  transition: 0.5s;
-  display: inline-block;
-}
-
-.button:hover {
-  background-color: #3498DB;
-}
-
-.about {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    width: 100vw;
-    align-items: center;
-    background: #fefefe;
-}
-
-.about img {
-    width: 120%;
-    grid-column: 1/5;
-}
-
-.about-info {
-    grid-column: 6/10;
-    padding: 2em;
-    padding: 2em;
-}
-
-.about-info h2 {
-    font-size: 2em;
-    color: #191c32;
-}
-
-.divider {
-    height: 4px;
-    width: 60px;
-    background-color: #675cff;
-    margin-top: 10px  
-}
-
-.about p {
-    margin-bottom: 1em;
-}
-
-.payment-methods {
-  background-color: #e3e9f7;;
+.contact-form {
+  background: #fefefe;
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.payment-methods h2 {
-  font-size: 2.0em;
-  color: #333;
+.contact-form h1 {
+  color: #000;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
-.payment-methods p {
-  font-size: 1em;
-  color: #191c32;
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form label {
+  color: #212526;
+  font-weight: 600;
   margin: 10px 0;
 }
 
-.payment-method {
-  display: inline-block;
-  margin: 10px;
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.payment-method img {
-  max-width: 60px;
-}
-
-.payment-method p {
-  font-size: 0.8em;
-  color: #191c32;
+.contact-form button {
+  background: #675cff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 .footer {
@@ -190,6 +140,7 @@ span {
   width: 100vw;
   height: 190px;
   background: #fefefe;
+  margin-top: auto;
 }
 
 .social-network {

@@ -87,7 +87,7 @@ a:hover::before {
 }
 
 .main h1 {
-  font-size: clamp(3vw, 4em, 4em);
+  font-size: clamp(3vw, 5em, 4em);
   font-family: "Arial", sans-serif; 
   color: #000; 
 }
@@ -97,90 +97,90 @@ span {
 }
 
 .main img {
-  width: 472px;
-  height: 470px;
+  width: 580px;
+  height: 400px;
+  margin-left: 60px;
 }
 
-.button {
-  color: #fff;
-  background-color: #675cff;
-  text-decoration: none;
-  padding: 10px 20px;
-  font-weight: 600;
-  border-radius: 15px;
-  font-family: "Open Sans", sans-serif;
-  transition: 0.5s;
-  display: inline-block;
+.card-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 40px;
 }
 
-.button:hover {
-  background-color: #3498DB;
+.title {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.about {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    width: 100vw;
-    align-items: center;
-    background: #fefefe;
+h2 {
+  font-size: 2em;
+  color: #333;
 }
 
-.about img {
-    width: 120%;
-    grid-column: 1/5;
+.cards {
+  display: flex;
+  justify-content: space-between;
 }
 
-.about-info {
-    grid-column: 6/10;
-    padding: 2em;
-    padding: 2em;
+.card {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
 }
 
-.about-info h2 {
-    font-size: 2em;
-    color: #191c32;
+.card:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 0 20px rgba(103, 92, 255, 0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
 }
 
-.divider {
-    height: 4px;
-    width: 60px;
-    background-color: #675cff;
-    margin-top: 10px  
+.card img {
+  max-width: 100%;
+  height: auto;
 }
 
-.about p {
-    margin-bottom: 1em;
+.card h3 {
+  font-size: 1.5em;
+  color: #333;
 }
 
-.payment-methods {
-  background-color: #e3e9f7;;
+.card p {
+  font-size: 1em;
+  color: #666;
+}
+
+.eye-care-section {
+  background-color: #f5f5f5; 
   padding: 20px;
   text-align: center;
 }
 
-.payment-methods h2 {
-  font-size: 2.0em;
+.eye-care-card {
+  padding: 20px;
+  border: 1px solid #675cff;
+  border-radius: 30px;
+  text-align: center;
+  margin: 10px;
+  display: inline-block;
+}
+
+.eye-care-card img {
+  width: 80px;
+  height: 100px;
+}
+
+.eye-care-card h3 {
+  font-size: 1.5em;
   color: #333;
 }
 
-.payment-methods p {
+.eye-care-card p {
   font-size: 1em;
-  color: #191c32;
-  margin: 10px 0;
-}
-
-.payment-method {
-  display: inline-block;
-  margin: 10px;
-}
-
-.payment-method img {
-  max-width: 60px;
-}
-
-.payment-method p {
-  font-size: 0.8em;
-  color: #191c32;
+  color: #666;
 }
 
 .footer {
@@ -215,3 +215,35 @@ span {
   margin-left: 10px;  
 }
 
+.video-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+}
+
+.video-content {
+  flex: 1;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+}
+
+.video-container {
+  flex: 1;
+}
+
+iframe {
+  width: 400px;
+  max-width: 700px;
+  height: 270px;
+}
