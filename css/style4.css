@@ -133,13 +133,69 @@ main {
   margin-top: 10px;
 }
 
+.about-me {
+  display: flex;
+  justify-content: center;
+  background: #fefefe;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about-me-image {
+  width: 30%;
+  padding: 20px;
+}
+
+.about-me-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.about-me-details {
+  width: 70%;
+  text-align: left;
+  padding: 20px;
+}
+
+.about-me-details h2 {
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.data-card {
+  background: #675cff;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.data-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.data-card ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.data-card p {
+  margin: 5px 0;
+}
+
+
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 190px;
-  background: #fefefe;
+  background: #e3e9f7;
   margin-top: auto;
 }
 
